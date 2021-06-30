@@ -7,7 +7,10 @@ import { Container, PageBody, Header, Footer, MainContainer } from './AppStyled'
 import './App.css';
 import HomeScreen from './pages/HomeScreen';
 import Tela2Screen from './pages/Tela2Screen';
-import Users from './pages/Users';
+import Poduct from './pages/Product';
+import Client from './pages/Client';
+import Proposta from './pages/Proposta';
+import ClientDados from './pages/ClientDados';
 
 export default () => {
     const name = useSelector(state => state.user.name);
@@ -15,9 +18,8 @@ export default () => {
     return (
         <BrowserRouter>
             <MainContainer>
-                
                 <Header>
-                <Sidebar />
+                    <Sidebar />
                     React - Desafio 01
                 </Header>
             </MainContainer>
@@ -30,15 +32,24 @@ export default () => {
                         <Route path="/tela2/:nome">
                             <Tela2Screen />
                         </Route>
-                        <Route path="/users">
-                            <Users />
+                        <Route path="/product">
+                            <Poduct />
+                        </Route>
+                        <Route path="/client">
+                            <Client />
+                        </Route>
+                        <Route path="/client-dados">
+                            <ClientDados />
+                        </Route>
+                        <Route path="/proposta">
+                            <Proposta />
                         </Route>
                     </Switch>
-                </PageBody>
+                </PageBody>/
 
                 <Footer>
                     React - Desafio 01
-                    </Footer>
+                </Footer>
             </Container>
         </BrowserRouter>
     );

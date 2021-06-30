@@ -10,9 +10,21 @@ export const SidebarData = [
         cName: 'nav-text'
     },
     {
-        title: 'Users',
-        path: '/users',
-        icon: <AiIcons.AiOutlineUserSwitch />,
+        title: 'Product',
+        path: '/product',
+        icon: <AiIcons.AiOutlineDropbox />,
+        cName: 'nav-text'
+    },
+    {
+        title: 'Client',
+        path: '/client',
+        icon: <AiIcons.AiOutlineTeam />,
+        cName: 'nav-text'
+    },
+    {
+        title: 'Proposta',
+        path: '/proposta',
+        icon: <AiIcons.AiOutlineSnippets />,
         cName: 'nav-text'
     }
 ]

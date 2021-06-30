@@ -9,7 +9,7 @@ export default () => {
 
     return (
         <Container>
-            <Titulo>Users</Titulo>
+            <Titulo>Proposta</Titulo>
         </Container>
     );
 }
